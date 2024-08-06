@@ -1,4 +1,4 @@
-# IP Tracing Tool
+# IPT - IP TRACING TOOL
 
 This is a simple Python script to trace the geographical location and other details of an IP address using the `ip-api.com` service. The tool fetches and displays information such as city, region, country, latitude, longitude, ISP, and organization associated with the provided IP address.
 
@@ -24,7 +24,7 @@ This is a simple Python script to trace the geographical location and other deta
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/ip-tracing-tool.git
+    git clone https://github.com/CyberPirates24/Ipt.git
     cd ip-tracing-tool
     ```
 
@@ -39,7 +39,7 @@ This is a simple Python script to trace the geographical location and other deta
 1. **Run the script:**
 
     ```sh
-    python ip_tracing_tool.py
+    python ipt.py
     ```
 
 2. **Enter the IP address:**
