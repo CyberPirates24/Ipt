@@ -26,7 +26,7 @@ This is a simple Python script to trace the geographical location and other deta
 
     ```sh
     git clone https://github.com/CyberPirates24/Ipt.git
-    cd ip-tracing-tool
+    cd Ipt
     ```
 
 2. **Install the Requirements**
