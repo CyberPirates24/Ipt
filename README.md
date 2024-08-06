@@ -18,6 +18,7 @@ This is a simple Python script to trace the geographical location and other deta
 
 - Python 3.x
 - `requests` library
+- `colorama` pkg
 
 ## Installation
 
@@ -28,10 +29,11 @@ This is a simple Python script to trace the geographical location and other deta
     cd ip-tracing-tool
     ```
 
-2. **Install the `requests` library:**
+2. **Install the Requirements**
 
     ```sh
     pip install requests
+    pip install colorama
     ```
 
 ## Usage
