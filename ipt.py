@@ -27,8 +27,10 @@ def display_ip_info(ip_info):
         print(f"{Fore.YELLOW}ISP: {ip_info.get('isp')}")
         print(f"{Fore.YELLOW}Organization: {ip_info.get('org')}")
         print(f"{Fore.YELLOW}Timezone: {ip_info.get('timezone')}")
+        return True
     else:
         print(f"{Fore.RED}Could not retrieve information for the given IP address.")
+        return False
 
 # Main function
 def main():
@@ -47,14 +49,22 @@ def main():
     print(Fore.GREEN + banner)
     
     # Display additional information
-    print(f"{Fore.GREEN}Coded by: Ahraf Uzzaman")
+    print(f"{Fore.GREEN}Coded by: Ahraf Uzzaman & Tanim_SeNSEi")
     print(f"{Fore.GREEN}Author: Cyber Pirates")
     print(f"{Fore.GREEN}Github: https://github.com/CyberPirates24")
     print("\n")
 
-    ip_address = input("Enter the IP address: ")
+    ip_address = input(f"{Fore.BLUE}Enter the IP address: ")
     ip_info = get_ip_info(ip_address)
-    display_ip_info(ip_info)
+    if display_ip_info(ip_info):
+        lat = ip_info['lat']
+        lon = ip_info['lon']
+        maps_url = f"https://www.google.com/maps?q={lat},{lon}"
+        earth_url = f"https://earth.google.com/web/search/{lat},{lon}"
+        
+        print("\nHere are the links to view the location:")
+        print(f"{Fore.GREEN}Google Maps: {maps_url}")
+        print(f"{Fore.GREEN}Google Earth: {earth_url}")
 
 if __name__ == "__main__":
     main()
