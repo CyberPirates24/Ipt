@@ -33,8 +33,7 @@ This is a simple Python script to trace the geographical location and other deta
 2. **Install the Requirements**
 
     ```sh
-    pip install requests
-    pip install colorama
+    pip install requirements.txt
     ```
 
 ## Usage
